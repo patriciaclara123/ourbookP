@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    android:background="@drawable/backgroud">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cardBackgroundColor="@color/blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Book"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/judul"
+        android:id="@+id/cardView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="75dp">
+
+        <ImageView
+            android:id="@+id/addPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/baseline_person_24" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/addNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round"
+        android:hint="Nama"
+        android:layout_below="@id/cardView"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="20dp"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/addNP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round"
+        android:layout_marginTop="5dp"
+        android:hint="Nama Panggilan"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="20dp"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"
+        android:layout_below="@id/addNama"/>
+
+    <EditText
+        android:id="@+id/addEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round"
+        android:layout_marginTop="5dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="20dp"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:layout_below="@id/addNP"/>
+
+    <EditText
+        android:id="@+id/addAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round"
+        android:layout_marginTop="5dp"
+        android:hint="Alamat"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="20dp"
+        android:drawableStart="@drawable/baseline_location_on_24"
+        android:drawablePadding="10dp"
+        android:layout_below="@id/addEmail"/>
+
+    <EditText
+        android:id="@+id/addTglLahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round"
+        android:layout_marginTop="5dp"
+        android:hint="Tanggal Lahir"
+        android:inputType="date"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="20dp"
+        android:drawableStart="@drawable/baseline_date_range_24"
+        android:drawablePadding="10dp"
+        android:layout_below="@id/addAlamat"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <EditText
+        android:id="@+id/addHP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round"
+        android:layout_marginTop="5dp"
+        android:hint="Nomor Handphone"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="20dp"
+        android:drawableStart="@drawable/baseline_call_24"
+        android:drawablePadding="10dp"
+        android:layout_below="@id/addTglLahir"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/baseline_done_24"
+        app:tint="@color/black"
+        android:backgroundTint="@color/blue" />
+
+
+
+</RelativeLayout>
